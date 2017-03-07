@@ -3,7 +3,8 @@ module.exports = {
     createBoolean,
     validateVariableNameRegex,
     validateDirectoryName,
-    validateDirectoryAndVariableName
+    validateDirectoryAndVariableName,
+    validateProjectName: validateProjectName
 };
 
 function createBoolean(value){
@@ -42,4 +43,8 @@ function validateDirectoryAndVariableName(value){
     else{
         return false;
     }
+}
+
+function validateProjectName(value){
+    return /^[a-z0-9][a-z0-9-_]+$/.test(value);
 }

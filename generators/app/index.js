@@ -2,6 +2,7 @@
 var Generator = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var helpers = require(__dirname + '/../../helpers');
 
 module.exports = class extends Generator{
 
@@ -15,7 +16,7 @@ module.exports = class extends Generator{
             'Greetings by ' + chalk.bold.yellow('ng-voi') + ', a simple and easy to use AngularJS scaffolding generator'
         ));
 
-        this.log(chalk.bold.yellow('Make sure you are running this command with ADMIN rights to avoid any error with npm during installation'));
+        this.log(chalk.bold.yellow('Make sure you are running this command with ADMIN rights to avoid any error with npm during installation\n'));
 
         var prompts = [
             {
@@ -37,6 +38,14 @@ module.exports = class extends Generator{
             this.props = props;
             this.log(props.name);
             this.log(props.description);
+
+            if(!helpers.validateProjectName(this.props.name)){
+                this.log(chalk.red(' * npm project name validation error!'));
+                this.log(chalk.red(" * Project name must contain all lowercase, one word (no space), dashes and underscores"));
+                this.log(chalk.yellow(" * More info at https://docs.npmjs.com/getting-started/using-a-package.json"));
+                this.log(chalk.red(" * exiting now.."));
+                process.exit(0);
+            }
 
         }.bind(this));
     }
