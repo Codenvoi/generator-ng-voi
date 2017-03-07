@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title ng-bind="$root.pageTitle"></title>
+
+    <!-- new bower components css files should be add just like below -->
+    <!-- build:css styles/libs.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/css/main.css"/>
+    <!-- endbuild -->
+
+    <!-- Favicon -->
+    <link href="http://www.codenvoi.com/wp-content/uploads/2015/12/favicon-16x16.png" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+
+<body class="">
+
+    <div ui-view></div>
+
+    <!-- ngInclude Modals here to avoid build issues -->
+
+</body>
+
+<!-- new bower components js files should be add just like below -->
+<!-- build:js scripts/libs.js -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/lodash/dist/lodash.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/restangular/src/restangular.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/ngstorage/ngStorage.min.js"></script>
+<!-- endbuild -->
+
+<!-- new angular components should be add just like below -->
+<!-- build:js scripts/app.js -->
+<!-- Modules -->
+<script src="src/common/common.module.js"></script>
+<script src="src/components/components.module.js"></script>
+<script src="src/core/core.module.js"></script>
+<script src="src/layouts/layouts.module.js"></script>
+<script src="src/app.module.js"></script>
+<!-- Configs, Runs, Constants -->
+<script src="src/core/restangular.config.js"></script>
+<script src="src/core/router.config.js"></script>
+<script src="src/core/httpStatus.constant.js"></script>
+<script src="src/core/core.constant.js"></script>
+<!-- Factories -->
+<!-- Directives -->
+<!-- Controllers -->
+<script src="src/layouts/layouts.controller.js"></script>
+<!-- endbuild -->
+
+</html>

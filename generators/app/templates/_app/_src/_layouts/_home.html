@@ -1,0 +1,116 @@
+<div class="container">
+
+    <section>
+        <h1 class="heading color-blue-light">ng-voi</h1>
+        <h3 class="sub-heading color-grey">Made with <i class="fa fa-heart color-pink"></i> at
+            <a href="http://www.codenvoi.com" target="blank" class="color-grey" id="company">Codenvoi</a>
+        </h3>
+    </section>
+
+    <section>
+        <h2>Configured with</h2>
+        <ul>
+            <li>UI Router</li>
+            <li>Restangular</li>
+            <li>Angular Messages</li>
+            <li>Bootstrap</li>
+            <li>Font Awesome</li>
+            <li>Local Storage (ngStorage)</li>
+            <li>SCSS</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Docs</h2>
+        Visit our <a href="">documentation</a> for usage guide
+    </section>
+
+    <section>
+        <h2>Examples</h2>
+    </section>
+
+    <section>
+        <h3>UI Router</h3>
+        <p>This route contains three named views <code>header, content, footer</code>. See <code>app/src/layouts/layouts.module.js</code> for reference.</p>
+    </section>
+
+    <section>
+        <h3>Restangular</h3>
+        <p>Already added in the project.</p>
+    </section>
+
+    <section>
+        <h3>Angular Messages</h3>
+        <form name="testForm">
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="email" name="email" required>
+                <div ng-messages="testForm.email.$error" ng-if="testForm.email.$dirty">
+                    <div ng-message="required">This field is required</div>
+                    <div ng-message="email">This should be a valid email</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ng-model="password" name="password" required>
+                <div ng-messages="testForm.password.$error" ng-if="testForm.password.$dirty">
+                    <div ng-message="required"> Password is required</div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-default" ng-click="formSubmitted = true;" ng-disabled="testForm.$invalid">Submit</button>
+
+            <p>{{formSubmitted}}</p>
+
+        </form>
+    </section>
+
+    <section>
+        <h3>Bootstrap</h3>
+        <!-- Standard button -->
+        <button type="button" class="btn btn-default">Default</button>
+
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-primary">Primary</button>
+
+        <!-- Indicates a successful or positive action -->
+        <button type="button" class="btn btn-success">Success</button>
+
+        <!-- Contextual button for informational alert messages -->
+        <button type="button" class="btn btn-info">Info</button>
+
+        <!-- Indicates caution should be taken with this action -->
+        <button type="button" class="btn btn-warning">Warning</button>
+
+        <!-- Indicates a dangerous or potentially negative action -->
+        <button type="button" class="btn btn-danger">Danger</button>
+
+        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+        <button type="button" class="btn btn-link">Link</button>
+    </section>
+
+    <section>
+        <h3>Font Awesome</h3>
+        <div>
+            <i class="fa fa-snowflake-o color-blue fa-2x" aria-hidden="true"></i> &nbsp; Winter is coming!
+        </div>
+    </section>
+
+    <section>
+        <h3>Local Storage (ngStorage)</h3>
+        <div class="form-group">
+            <label for="storageValue">Storage Value</label>
+            <input type="text" id="storageValue" ng-model="vm.storageValue" class="form-control">
+        </div>
+        <button type="button" class="btn btn-success" ng-click="vm.saveValue(vm.storageValue)">Save Value</button>
+        <p>Update value, click on save and refresh the browser, value will remain in local storage</p>
+    </section>
+
+    <section>
+        <h3>SCSS</h3>
+        <p>Already configured with SCSS, see <code>app/styles/scss</code> directory for reference.</p>
+    </section>
+
+</div>

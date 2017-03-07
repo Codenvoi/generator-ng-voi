@@ -1,0 +1,66 @@
+/* Colors */
+.color-white{
+  color: #ffffff;
+}
+.color-black{
+  color: #000000;
+}
+.color-blue-light{
+  color: #52b9cc;
+}
+.color-pink{
+  color: #F36176;
+}
+.color-coral{
+  color: #F08080;
+}
+.color-grey{
+  color: #747474;
+}
+.color-green{
+  color: #4a944b;
+}
+.color-blue{
+  color: #3b5998;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Font_OpenSans_Light;
+  src: url(/fonts/OpenSans-Light.ttf);
+}
+.font-opensans-light{
+  font-family: Font_OpenSans_Light;
+}
+@font-face {
+  font-family: Font_OpenSans_Regular;
+  src: url(/fonts/OpenSans-Regular.ttf);
+}
+.font-opensans-regular{
+  font-family: Font_OpenSans_Regular;
+}
+@font-face {
+  font-family: Font_OpenSans_Semibold;
+  src: url(/fonts/OpenSans-Semibold.ttf);
+}
+.font-opensans-semibold{
+  font-family: Font_OpenSans_Semibold;
+}
+
+/* General */
+body{
+  font-family: Font_OpenSans_Light;
+}
+
+h2,h3,h4,h5,h6{
+  color: #555;
+}
+
+.heading{
+  font-family: Font_OpenSans_Semibold;
+  text-align: center;
+}
+.sub-heading{
+  font-family: Font_OpenSans_Light;
+  text-align: center;
+}

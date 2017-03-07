@@ -1,0 +1,10 @@
+.sub-heading{
+  #company{
+    cursor: pointer;
+    transition: 0.6s all;
+    &:hover{
+      text-decoration: none;
+      color: #F08080;
+    }
+  }
+}
