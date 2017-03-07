@@ -15,12 +15,9 @@ module.exports = class extends Generator{
             'Greetings by ' + chalk.bold.yellow('ng-voi') + ', a simple and easy to use AngularJS scaffolding generator'
         ));
 
+        this.log(chalk.bold.yellow('Make sure you are running this command with ADMIN rights to avoid any error with npm during installation'));
+
         var prompts = [
-            {
-                type: 'confirm',
-                name: 'adminconfirm',
-                message: 'Use this command with ADMIN rights, in order to avoid any error with npm during installation.',
-            },
             {
                 type: 'input',
                 name: 'name',
