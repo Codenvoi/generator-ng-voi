@@ -2,7 +2,7 @@
 var Generator = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
-var helpers = require('../../helpers');
+var helpers = require(__dirname + '/../../helpers');
 
 module.exports = class extends Generator{
 
