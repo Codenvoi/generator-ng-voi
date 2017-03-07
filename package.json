@@ -1,6 +1,6 @@
 {
   "name": "generator-ng-voi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "homepage": "",
   "author": {
@@ -9,7 +9,9 @@
     "url": ""
   },
   "files": [
-    "generators"
+    "generators",
+    "helpers",
+    "templates"
   ],
   "main": "generators/index.js",
   "keywords": [
