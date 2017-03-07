@@ -1,5 +1,5 @@
 
-# generator-ng-voi
+# generator-ng-voi [![Build Status](https://travis-ci.org/Codenvoi/generator-ng-voi.svg?branch=master)](https://travis-ci.org/Codenvoi/generator-ng-voi) [![Coverage Status](https://coveralls.io/repos/github/Codenvoi/generator-ng-voi/badge.svg?branch=master)](https://coveralls.io/github/Codenvoi/generator-ng-voi?branch=master)
 > _**Let us worry about the application structure so that you can focus on development :)**_
 
 <p align="center">
