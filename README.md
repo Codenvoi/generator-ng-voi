@@ -218,7 +218,7 @@ Website: http://www.codenvoi.com
 Facebook Page: https://web.facebook.com/codenvoi/
 
 ### Issues
-[Open a new issue]()
+Check [old issue](https://github.com/Codenvoi/generator-ng-voi/issues), if none of them is related to yours [create a new one](https://github.com/Codenvoi/generator-ng-voi/issues/new)
 
 ## License
 Licensed under MIT
