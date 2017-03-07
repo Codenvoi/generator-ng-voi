@@ -50,8 +50,9 @@ with the tools that you might need in developing your dream project.
 ### Prerequisites
 
 **NOTE: Make sure you have latest versions of these tools**
-
+<br>
 **Node.js and npm** - Install node and npm from their [website](https://nodejs.org)
+<br>
 **Yeoman, Gulp and Bower** - Run this command with ADMIN rights to avoid any error during installation
 ```sh
 npm install -g yo gulp bower
